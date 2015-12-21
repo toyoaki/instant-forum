@@ -1,0 +1,10 @@
+applications:
+- path: target/instant-forum-0.1.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: InstantForum
+  host: instantforum
+  disk_quota: 1024M
+  services:
+  - SQL Database

@@ -1,0 +1,20 @@
+body {
+	padding-top: 60px;
+}
+
+.header .app-name {
+	color: white;
+}
+
+.header .username {
+	color: #ddd;
+	padding: 15px;
+}
+
+.main-panel {
+	float: none;
+}
+
+.modal-message {
+	margin: 10px 10px 0 10px;
+}
