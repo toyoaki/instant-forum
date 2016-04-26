@@ -9,7 +9,7 @@
 				</button>
 				<h4 class="modal-title">Visualizar Pergunta</h4>
 			</div>
-			<div class="modal-body">
+			<div class="modal-body view-question-modal-body">
 
 				<div class="alert alert-danger hidden" role="alert" id="viewQuestionErrorMessages"></div>
 
@@ -29,7 +29,7 @@
 						<textarea class="form-control" rows="5" id="viewQuestionDescription" disabled></textarea>
 					</div>
 					<div class="form-group">
-						<label for="newQuestionTitle">Respostas <a href="#" onclick="viewAnswersInEnglish()" class="translate-link">Traduzer para Inglês</a></label>
+						<label for="newQuestionTitle">Respostas <a href="#" onclick="viewAnswersInEnglish()" class="translate-link">Traduzir para Inglês</a></label>
 						<div id="viewQuestionAnswers"></div>
 					</div>
 					<div class="form-group">
@@ -41,7 +41,7 @@
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-				<button type="button" class="btn btn-primary" onclick="saveAnswer()">Responder!</button>
+				<button type="button" class="btn btn-primary" onclick="sendAnswer()">Responder!</button>
 			</div>
 		</div>
 		<!-- /.modal-content -->

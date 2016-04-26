@@ -1,32 +1,28 @@
-package com.toyo.instantforum.data.model;
+package com.toyo.instantforum.web.websocket.data;
 
 import java.sql.Timestamp;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+import com.toyo.instantforum.data.model.Answer;
+import com.toyo.instantforum.data.model.Question;
+import com.toyo.instantforum.data.model.User;
 
-import org.springframework.data.jpa.domain.AbstractPersistable;
+public class AnswerMessage {
 
-@Entity
-public class Answer extends AbstractPersistable<Long> {
-
-    private static final long serialVersionUID = -5097245330982376867L;
-
-    @Column(nullable = false)
     protected Timestamp date;
-
-    @Column(nullable = false)
     protected String text;
-
-    @ManyToOne
-    @JoinColumn(name = "user_id")
     protected User user;
-
-    @ManyToOne
-    @JoinColumn(name = "question_id")
     protected Question question;
+
+    private String error;
+
+    public AnswerMessage(Answer answer) {
+	this.date = answer.getDate();
+	this.text = answer.getText();
+	this.question = answer.getQuestion();
+
+	User answerUser = answer.getUser();
+	this.user = new User(answerUser.getId(), answerUser.getUsername());
+    }
 
     public Long getDateInMillis() {
 	return date == null ? null : date.getTime();
@@ -62,6 +58,14 @@ public class Answer extends AbstractPersistable<Long> {
 
     public void setQuestion(Question question) {
 	this.question = question;
+    }
+
+    public String getError() {
+	return error;
+    }
+
+    public void setError(String error) {
+	this.error = error;
     }
 
 }

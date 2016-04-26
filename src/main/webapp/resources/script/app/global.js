@@ -54,3 +54,12 @@ function blockScreen() {
 function unblockScreen() {
 	$.unblockUI();
 }
+
+function getContextRoot(){
+	var path = window.location.pathname;
+	return path.substring(0, path.indexOf("/",2));
+}
+
+function formatDate(date){
+	return $.format.date(date, "dd/MM/yyyy HH:mm:ss")	
+}

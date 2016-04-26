@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	if (window.location.href.endsWith("authenticationError")) {
+	if (window.location.href.lastIndexOf("authenticationError") != -1) {
 		displayErrorMessage("Favor corrigir Usuário / Senha", "errorMessages");
 	}
 });

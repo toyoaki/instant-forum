@@ -51,6 +51,10 @@
 
 	<jsp:include page="fragments/footer.jsp" />
 
+	<script src="resources/script/3rdparty/sockjs-0.3.4.js" charset="utf-8"></script>
+	<script src="resources/script/3rdparty/stomp.js" charset="utf-8"></script>
+	<script src="resources/script/3rdparty/jquery-dateFormat.min.js" charset="utf-8"></script>
+	<script src="resources/script/app/WebSocketStompClient.js" charset="utf-8"></script>
 	<script src="resources/script/app/mainPanel.js" charset="utf-8"></script>
 
 </body>

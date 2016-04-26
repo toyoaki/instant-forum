@@ -6,9 +6,10 @@ App de fórum com jeito de chat
 * Cadastro de usuário
 * Fazer perguntas em qualquer categoria
 * Visualizar suas perguntas e perguntas em que você é um expert e pode ajudar outros
-* Responder perguntas nas áreas em que você é um expert
-* Tradução das respostas para inglês (utilizando Watson Language Translation)
+* Responder perguntas nas áreas em que você é um expert em estilo de chat
 
-##Roadmap
+##Configurações
 
-- Evoluir para utilizar websockets e funcionar como um chat
+* Data Source JNDI: jdbc/instantforum (generateDDL está true)
+* Para criar dados de teste, executar o arquivo load.sql da pasta resources
+ 
