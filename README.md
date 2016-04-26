@@ -1,15 +1,15 @@
 # instant-forum
-App de fórum com jeito de chat
+Chat like forum app
 
-##Funcionalidades
+##Features
 
-* Cadastro de usuário
-* Fazer perguntas em qualquer categoria
-* Visualizar suas perguntas e perguntas em que você é um expert e pode ajudar outros
-* Responder perguntas nas áreas em que você é um expert em estilo de chat
+* User register
+* Ask questions in pre-registered categories
+* Visualize your questions and questions you are an expert in so you can help others
+* Answer questions you are an expert in a chat style
 
-##Configurações
+##Configuration
 
-* Data Source JNDI: jdbc/instantforum (generateDDL está true)
-* Para criar dados de teste, executar o arquivo load.sql da pasta resources
+* Data Source JNDI: jdbc/instantforum (generateDDL is set to true)
+* Database load is in the load.sql file in the resources folder
  
